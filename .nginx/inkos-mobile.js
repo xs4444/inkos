@@ -57,7 +57,7 @@
   .max-w-3xl, .max-w-4xl { max-width: 100% !important; padding-left: 8px !important; padding-right: 8px !important; }\
   /* 输入区 flex 容器内所有子元素允许收缩，防止模型选择器/查看世界按钮撑出屏幕 */\
   .flex.items-start.gap-2 > *,\
-  .flex.items-center.gap-2.border-t > * { min-width: 0 !important; }\
+  .flex.items-center.gap-2.border-t > * { min-width: 0 !important; white-space: nowrap !important; }\
   button, a, [role="button"] { min-height: 44px !important; }\
   body { overflow-x: hidden !important; }\
   img { max-width: 100% !important; height: auto !important; }\
