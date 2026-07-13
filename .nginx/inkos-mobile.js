@@ -55,8 +55,9 @@
   .chat-message-scroll > div:first-child { max-width: 100% !important; }\
   textarea { font-size: 16px !important; }\
   .max-w-3xl, .max-w-4xl { max-width: 100% !important; padding-left: 8px !important; padding-right: 8px !important; }\
-  /* 输入区 flex-1 允许收缩，防止模型选择器长标签撑出屏幕 */\
-  .flex.items-start.gap-2 > .flex-1 { min-width: 0 !important; }\
+  /* 输入区 flex 容器内所有子元素允许收缩，防止模型选择器/查看世界按钮撑出屏幕 */\
+  .flex.items-start.gap-2 > *,\
+  .flex.items-center.gap-2.border-t > * { min-width: 0 !important; }\
   button, a, [role="button"] { min-height: 44px !important; }\
   body { overflow-x: hidden !important; }\
   img { max-width: 100% !important; height: auto !important; }\
