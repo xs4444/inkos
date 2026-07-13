@@ -43,8 +43,11 @@
     color: var(--foreground, inherit) !important;\
     flex-shrink: 0 !important;\
   }\
-  /* 顶栏压缩 */\
+  /* 顶栏压缩 + 隐藏面包屑导航 */\
   header.h-14 { height: auto !important; min-height: 44px !important; padding: 4px 8px !important; }\
+  /* 隐藏面包屑，只保留汉堡按钮 */\
+  header > div:first-child > *:not(.inkos-hamburger) { display: none !important; }\
+  header > div:first-child { gap: 0 !important; }\
   /* 主区全宽 */\
   #root > div > div.flex-1 { width: 100% !important; max-width: 100vw !important; }\
   main, main > div { max-width: 100% !important; }\
