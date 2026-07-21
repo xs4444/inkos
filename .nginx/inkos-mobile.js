@@ -48,6 +48,8 @@
   /* 隐藏面包屑，只保留汉堡按钮 */\
   header > div:first-child > *:not(.inkos-hamburger) { display: none !important; }\
   header > div:first-child { gap: 0 !important; }\
+  /* 高密度屏缩小基础字号 */\
+  html { font-size: 13px !important; }\
   /* 主区全宽 */\
   #root > div > div.flex-1 { width: 100% !important; max-width: 100vw !important; }\
   main, main > div { max-width: 100% !important; padding: 0 !important; }\
