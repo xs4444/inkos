@@ -49,7 +49,7 @@
   header > div:first-child > *:not(.inkos-hamburger) { display: none !important; }\
   header > div:first-child { gap: 0 !important; }\
   /* 缩小根字号 → 所有 Tailwind rem 单位等比缩小 */\
-  html { font-size: 14px !important; }\
+  html { font-size: 13px !important; }\
   /* 主区全宽 */\
   #root > div > div.flex-1 { width: 100% !important; max-width: 100vw !important; }\
   main, main > div { max-width: 100% !important; }\
