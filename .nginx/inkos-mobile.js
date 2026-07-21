@@ -48,19 +48,18 @@
   /* 隐藏面包屑，只保留汉堡按钮 */\
   header > div:first-child > *:not(.inkos-hamburger) { display: none !important; }\
   header > div:first-child { gap: 0 !important; }\
-  /* 缩小根字号 → 所有 Tailwind rem 单位等比缩小 */\
-  html { font-size: 13px !important; }\
   /* 主区全宽 */\
   #root > div > div.flex-1 { width: 100% !important; max-width: 100vw !important; }\
-  main, main > div { max-width: 100% !important; }\
-  .chat-message-scroll { padding: 4px !important; }\
+  main, main > div { max-width: 100% !important; padding: 0 !important; }\
+  .fade-in { padding: 4px !important; }\
+  .chat-message-scroll { padding: 2px !important; }\
   .chat-message-scroll > div:first-child { max-width: 100% !important; }\
   textarea { font-size: 16px !important; }\
-  .max-w-3xl, .max-w-4xl { max-width: 100% !important; padding-left: 8px !important; padding-right: 8px !important; }\
+  .max-w-3xl, .max-w-4xl { max-width: 100% !important; padding-left: 4px !important; padding-right: 4px !important; }\
   /* 输入区 flex 容器内所有子元素允许收缩，防止模型选择器/查看世界按钮撑出屏幕 */\
   .flex.items-start.gap-2 > *,\
   .flex.items-center.gap-2.border-t > * { min-width: 0 !important; white-space: nowrap !important; }\
-  button, a, [role="button"] { min-height: 44px !important; }\
+  button, a, [role="button"] { min-height: 36px !important; }\
   body { overflow-x: hidden !important; }\
   img { max-width: 100% !important; height: auto !important; }\
   .grid.grid-cols-2 { grid-template-columns: 1fr !important; }\
