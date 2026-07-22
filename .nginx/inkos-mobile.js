@@ -57,11 +57,11 @@
   .fade-in { padding: 4px !important; }\
   .chat-message-scroll { padding: 2px !important; }\
   .chat-message-scroll > div:first-child { max-width: 100% !important; }\
-  .chat-message-scroll * { white-space: normal !important; }\
-  textarea { font-size: 16px !important; }\
+  textarea { font-size: 1rem !important; white-space: pre-wrap !important; }\
   .max-w-3xl, .max-w-4xl { max-width: 100% !important; padding-left: 4px !important; padding-right: 4px !important; }\
-  /* 输入区 flex 容器内所有子元素允许收缩，防止模型选择器/查看世界按钮撑出屏幕 */\
-  .flex.items-start.gap-2 > *,\
+  /* 输入区 flex 子元素允许收缩 */\
+  .flex.items-start.gap-2 > * { min-width: 0 !important; }\
+  /* 模型选择器栏允许收缩且不换行 */\
   .flex.items-center.gap-2.border-t > * { min-width: 0 !important; white-space: nowrap !important; }\
   button, a, [role="button"] { min-height: 36px !important; }\
   body { overflow-x: hidden !important; }\
