@@ -6,19 +6,18 @@
 @media (max-width: 767px) {\
   /* 侧栏转换为固定覆盖层 */\
   #root > div > aside:first-child {\
+    display: none !important;\
+  }\
+  body.inkos-mobile-open #root > div > aside:first-child {\
+    display: flex !important;\
     position: fixed !important;\
     top: 0 !important;\
     left: 0 !important;\
     height: 100vh !important;\
     height: 100dvh !important;\
     z-index: 999 !important;\
-    transform: translateX(-100%);\
-    transition: transform 0.25s ease !important;\
     width: 280px !important;\
     box-shadow: 4px 0 24px rgba(0,0,0,0.25) !important;\
-  }\
-  body.inkos-mobile-open #root > div > aside:first-child {\
-    transform: translateX(0) !important;\
   }\
   /* 遮罩层 */\
   body.inkos-mobile-open::after {\
