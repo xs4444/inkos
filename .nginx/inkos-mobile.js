@@ -57,6 +57,7 @@
   .fade-in { padding: 4px !important; }\
   .chat-message-scroll { padding: 2px !important; }\
   .chat-message-scroll > div:first-child { max-width: 100% !important; }\
+  .chat-message-scroll * { white-space: normal !important; }\
   textarea { font-size: 16px !important; }\
   .max-w-3xl, .max-w-4xl { max-width: 100% !important; padding-left: 4px !important; padding-right: 4px !important; }\
   /* 输入区 flex 容器内所有子元素允许收缩，防止模型选择器/查看世界按钮撑出屏幕 */\
